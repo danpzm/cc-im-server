@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>加入房间</title>
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;padding:24px;background:#0f172a;color:#e2e8f0;line-height:1.5;}
+.card{max-width:420px;margin:40px auto;padding:24px;border-radius:12px;background:#1e293b;box-shadow:0 8px 32px rgba(0,0,0,.35);}
+h1{font-size:20px;margin:0 0 12px;}
+p{margin:0 0 16px;color:#94a3b8;font-size:14px;}
+a.btn{display:inline-block;padding:12px 20px;background:#0d9488;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;}
+a.btn:hover{opacity:.92;}
+.note{margin-top:20px;font-size:12px;color:#64748b;}
+</style>
+<script>
+function openApp(){try{window.location.href="{{DEEP_LINK}}";}catch(e){}}
+</script>
+</head>
+<body>
+<div class="card">
+<h1>在应用中打开</h1>
+<p>若已安装本客户端，请点击下方按钮加入房间；首次使用请从官网下载安装。</p>
+<p><a class="btn" href="{{DEEP_LINK}}">打开应用</a></p>
+<p class="note">若点击后无反应，请确认已安装客户端且已注册「ccquic」链接协议。</p>
+</div>
+</body>
+</html>

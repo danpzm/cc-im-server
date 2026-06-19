@@ -1,0 +1,41 @@
+.DS_Store
+node_modules
+tmp
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+# 允许提交 env 下的 *.example；根目录 .env.* 会误伤 env，故显式放行
+!env/**/.env.*.example
+# 真实环境文件（勿提交）
+env/dev/.env.shared
+env/dev/.env.http
+env/dev/.env.quic
+env/dev/.env.queue
+env/dev/.env.oss
+env/dev/.env.media
+env/prod/.env.shared
+env/prod/.env.http
+env/prod/.env.quic
+env/prod/.env.queue
+env/prod/.env.oss
+env/prod/.env.media
+# 旧版扁平布局（迁移后删除）
+env/.env.shared
+env/.env.http
+env/.env.quic
+env/.env.queue
+env/.env.oss
+env/.env.media
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+*.exe
+/dist
+/uploads
+/.vscode
+/.opensslgen
+/data
+/.claude
+cert
